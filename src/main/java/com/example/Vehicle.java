@@ -9,11 +9,11 @@ public class Vehicle {
         this.make = make;
         this.model = model;
 
-    }
+     
 
-    public void getInfo(){
-        System.out.println(make);
-        System.out.println(model);
     }
+  
+
+ 
     
 }
