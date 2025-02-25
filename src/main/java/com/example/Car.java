@@ -5,14 +5,14 @@ import java.util.Scanner;
  * all the values are initialized here
  */
 public class Car extends Vehicle {
-    public String make;
-    public String model;
-    public int year;
+public String make;
+public String model;
+public int year;
 
     public Car(String make, String model, int year) {
-        super(make, model);
-        this.make = make;
-        this.model = model;
+      super(make, model); /*taken from the parent class */
+    //  this.make = make;
+     // this.model = model;
         this.year = year;
     }
 
@@ -32,6 +32,7 @@ public class Car extends Vehicle {
     }
 
     public void modifyCar(){
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("please enter the make of your car");
         String make = sc.nextLine();
@@ -42,6 +43,7 @@ public class Car extends Vehicle {
         System.out.println("plase enter the year of the car");
         int year = sc.nextInt();
         setYear(year);
+        sc.close();
     
     }
     public void getInfo() {
